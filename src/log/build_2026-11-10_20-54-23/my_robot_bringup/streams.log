@@ -1,0 +1,44 @@
+[0.043s] Invoking command in '/home/nvidia/Downloads/ros2_ws/src/build/my_robot_bringup': AMENT_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:/home/nvidia/px4_ros/ros_ws/install/odom_2_px4:/home/nvidia/px4_ros/ros_ws/install/px4_msgs:/home/nvidia/px4_ros/ros_ws/install/bringup:/home/nvidia/px4_ros/ros_ws/install/point_lio:/home/nvidia/px4_ros/ros_ws/install/livox_ros_driver2:/opt/ros/humble /usr/bin/cmake /home/nvidia/Downloads/ros2_ws/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup
+[0.156s] -- The C compiler identification is GNU 11.4.0
+[0.243s] -- The CXX compiler identification is GNU 11.4.0
+[0.253s] -- Detecting C compiler ABI info
+[0.371s] -- Detecting C compiler ABI info - done
+[0.392s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.392s] -- Detecting C compile features
+[0.397s] -- Detecting C compile features - done
+[0.402s] -- Detecting CXX compiler ABI info
+[0.758s] -- Detecting CXX compiler ABI info - done
+[0.771s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.771s] -- Detecting CXX compile features
+[0.773s] -- Detecting CXX compile features - done
+[0.781s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.440s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.919s] -- Configuring done
+[1.945s] -- Generating done
+[1.950s] -- Build files have been written to: /home/nvidia/Downloads/ros2_ws/src/build/my_robot_bringup
+[1.965s] Invoked command in '/home/nvidia/Downloads/ros2_ws/src/build/my_robot_bringup' returned '0': AMENT_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:/home/nvidia/px4_ros/ros_ws/install/odom_2_px4:/home/nvidia/px4_ros/ros_ws/install/px4_msgs:/home/nvidia/px4_ros/ros_ws/install/bringup:/home/nvidia/px4_ros/ros_ws/install/point_lio:/home/nvidia/px4_ros/ros_ws/install/livox_ros_driver2:/opt/ros/humble /usr/bin/cmake /home/nvidia/Downloads/ros2_ws/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup
+[1.966s] Invoking command in '/home/nvidia/Downloads/ros2_ws/src/build/my_robot_bringup': AMENT_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:/home/nvidia/px4_ros/ros_ws/install/odom_2_px4:/home/nvidia/px4_ros/ros_ws/install/px4_msgs:/home/nvidia/px4_ros/ros_ws/install/bringup:/home/nvidia/px4_ros/ros_ws/install/point_lio:/home/nvidia/px4_ros/ros_ws/install/livox_ros_driver2:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/Downloads/ros2_ws/src/build/my_robot_bringup -- -j8 -l8
+[2.119s] Invoked command in '/home/nvidia/Downloads/ros2_ws/src/build/my_robot_bringup' returned '0': AMENT_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:/home/nvidia/px4_ros/ros_ws/install/odom_2_px4:/home/nvidia/px4_ros/ros_ws/install/px4_msgs:/home/nvidia/px4_ros/ros_ws/install/bringup:/home/nvidia/px4_ros/ros_ws/install/point_lio:/home/nvidia/px4_ros/ros_ws/install/livox_ros_driver2:/opt/ros/humble /usr/bin/cmake --build /home/nvidia/Downloads/ros2_ws/src/build/my_robot_bringup -- -j8 -l8
+[2.119s] Invoking command in '/home/nvidia/Downloads/ros2_ws/src/build/my_robot_bringup': AMENT_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:/home/nvidia/px4_ros/ros_ws/install/odom_2_px4:/home/nvidia/px4_ros/ros_ws/install/px4_msgs:/home/nvidia/px4_ros/ros_ws/install/bringup:/home/nvidia/px4_ros/ros_ws/install/point_lio:/home/nvidia/px4_ros/ros_ws/install/livox_ros_driver2:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/Downloads/ros2_ws/src/build/my_robot_bringup
+[2.140s] -- Install configuration: ""
+[2.141s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/launch
+[2.149s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/launch/my_robot.launch.xml
+[2.151s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/config
+[2.152s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/config/my_robot_moveit.rviz
+[2.158s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/config/ros2_controllers.yaml
+[2.159s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/ament_index/resource_index/package_run_dependencies/my_robot_bringup
+[2.160s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/ament_index/resource_index/parent_prefix_path/my_robot_bringup
+[2.161s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.sh
+[2.162s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.dsv
+[2.163s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/environment/path.sh
+[2.164s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/environment/path.dsv
+[2.164s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/local_setup.bash
+[2.165s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/local_setup.sh
+[2.166s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/local_setup.zsh
+[2.167s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/local_setup.dsv
+[2.168s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/package.dsv
+[2.169s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/ament_index/resource_index/packages/my_robot_bringup
+[2.170s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig.cmake
+[2.183s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig-version.cmake
+[2.191s] -- Installing: /home/nvidia/Downloads/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/package.xml
+[2.192s] Invoked command in '/home/nvidia/Downloads/ros2_ws/src/build/my_robot_bringup' returned '0': AMENT_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/nvidia/Downloads/ros2_ws/src/install/my_robot_moveit_config:/home/nvidia/Downloads/ros2_ws/src/install/my_robot_description:/home/nvidia/px4_ros/ros_ws/install/odom_2_px4:/home/nvidia/px4_ros/ros_ws/install/px4_msgs:/home/nvidia/px4_ros/ros_ws/install/bringup:/home/nvidia/px4_ros/ros_ws/install/point_lio:/home/nvidia/px4_ros/ros_ws/install/livox_ros_driver2:/opt/ros/humble /usr/bin/cmake --install /home/nvidia/Downloads/ros2_ws/src/build/my_robot_bringup

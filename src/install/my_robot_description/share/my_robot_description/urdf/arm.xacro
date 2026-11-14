@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- 定义一个名为 base_link 的连杆，通常作为机器人基座 -->
+    <link name="base_link">
+        <!-- visual 表示机器人的可视化外观，不影响碰撞和物理仿真 -->
+        <visual>
+            <!-- 定义几何形状 -->
+            <geometry>
+                <!-- 长方体尺寸：长 0.4m、宽 0.4m、高 0.1m -->
+                <box size="0.4 0.4 0.1" />
+            </geometry>
+
+            <!-- 外观相对于 base_link 坐标系的位置和姿态 -->
+            <!-- xyz 表示位置：x=0, y=0, z=0 -->
+            <!-- rpy 表示旋转：roll=0, pitch=0, yaw=0，即不旋转 -->
+            <origin xyz="0 0 0" rpy="0 0 0" />
+
+            <!-- 使用上面定义的 grey 材质 -->
+            <material name="grey" />
+        </visual>
+
+        <collision>
+            <geometry>
+                <box size="0.4 0.4 0.1" />
+            </geometry>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </collision>
+    </link>
+
+    <link name="shoulder_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.38" radius="0.1" />
+            </geometry>
+
+            <origin xyz="0 0 0.19" rpy="0 0 0" />
+
+            <material name="blue" />
+        </visual>
+
+        <collision>
+            <geometry>
+                <box size="0.2 0.2 0.38" />
+            </geometry>
+            <origin xyz="0 0 0.19" rpy="0 0 0" />
+        </collision>
+    </link>
+
+    <link name="arm_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.6" radius="0.05" />
+            </geometry>
+
+            <origin xyz="0 0 0.3" rpy="0 0 0" />
+
+            <material name="grey" />
+        </visual>
+
+        <collision>
+            <geometry>
+                <box size="0.1 0.1 0.6" />
+            </geometry>
+            <origin xyz="0 0 0.3" rpy="0 0 0" />
+        </collision>
+    </link>
+
+    <link name="elbow_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.1" radius="0.05" />
+            </geometry>
+
+            <origin xyz="0 0 0.05" rpy="0 0 0" />
+
+            <material name="blue" />
+        </visual>
+
+        <collision>
+            <geometry>
+                <box size="0.1 0.1 0.2" />
+            </geometry>
+            <origin xyz="0 0 0.05" rpy="0 0 0" />
+        </collision>
+    </link>
+
+    <link name="fotesrm_link">
+        <visual>
+            <geometry>
+                <cylinder length="0.5" radius="0.05" />
+            </geometry>
+
+            <origin xyz="0 0 0.25" rpy="0 0 0" />
+
+            <material name="grey" />
+        </visual>
+
+        <collision>
+            <geometry>
+                <box size="0.1 0.1 0.5" />
+            </geometry>
+            <origin xyz="0 0 0.25" rpy="0 0 0" />
+        </collision>
+    </link>
+
+    <link name="wrist_link">
+        <visual>
+            <geometry>
+                <box size="0.1 0.1 0.05" />
+            </geometry>
+
+            <origin xyz="0 0 0.025" rpy="0 0 0" />
+
+            <material name="blue" />
+        </visual>
+
+        <collision>
+            <geometry>
+                <box size="0.1 0.1 0.05" />
+            </geometry>
+            <origin xyz="0 0 0.025" rpy="0 0 0" />
+        </collision>
+    </link>
+
+    <link name="hand_link">
+        <visual>
+            <geometry>
+                <box size="0.1 0.1 0.02" />
+            </geometry>
+
+            <origin xyz="0 0 0.01" rpy="0 0 0" />
+
+            <material name="grey" />
+        </visual>
+
+        <collision>
+            <geometry>
+                <box size="0.1 0.1 0.02" />
+            </geometry>
+            <origin xyz="0 0 0.01" rpy="0 0 0" />
+        </collision>
+    </link>
+
+    <link name="tool_link" />
+
+    <joint name="joint1" type="revolute">
+        <parent link="base_link" />
+        <child link="shoulder_link" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+        <limit effort="1000.0" velocity="1.0"
+               lower="-3.141592653589793"
+               upper="3.141592653589793" />
+    </joint>
+
+    <joint name="joint2" type="revolute">
+        <parent link="shoulder_link" />
+        <child link="arm_link" />
+        <origin xyz="0 0 0.5" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+        <limit effort="1000.0" velocity="1.0" lower="0" upper="2.5" />
+    </joint>
+
+    <joint name="joint3" type="revolute">
+        <parent link="arm_link" />
+        <child link="elbow_link" />
+        <origin xyz="0 0 0.6" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+        <limit effort="1000.0" velocity="1.0" lower="0" upper="2.5" />
+    </joint>
+
+    <joint name="joint4" type="revolute">
+        <parent link="elbow_link" />
+        <child link="fotesrm_link" />
+        <origin xyz="0 0 0.05" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+        <limit effort="1000.0" velocity="1.0" lower="0" upper="2.5" />
+    </joint>
+
+    <joint name="joint5" type="revolute">
+        <parent link="fotesrm_link" />
+        <child link="wrist_link" />
+        <origin xyz="0 0 0.5" rpy="0 0 0" />
+        <axis xyz="0 1 0" />
+        <limit effort="1000.0" velocity="1.0" lower="0" upper="2.5" />
+    </joint>
+
+    <joint name="joint6" type="continuous">
+        <parent link="wrist_link" />
+        <child link="hand_link" />
+        <origin xyz="0 0 0.05" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+    <joint name="hand_tool_joint" type="fixed">
+        <parent link="hand_link" />
+        <child link="tool_link" />
+        <origin xyz="0 0 0.02" rpy="0 0 0" />
+        <axis xyz="0 0 1" />
+    </joint>
+
+</robot>

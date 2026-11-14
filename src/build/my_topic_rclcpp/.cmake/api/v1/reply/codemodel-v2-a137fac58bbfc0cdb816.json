@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-88a9803c44e1fbe3b4d6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "my_topic_rclcpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "my_topic_rclcpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_topic_rclcpp_uninstall-16f74c1e1e4c45424a01.json",
+					"name" : "my_topic_rclcpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "topic_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-topic_publisher-2baaba3860a0e72ed6af.json",
+					"name" : "topic_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "topic_subscribe::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-topic_subscribe-87d26bec5587a9ffa43d.json",
+					"name" : "topic_subscribe",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-e131af205e17fe9bf423.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nvidia/Downloads/ros2_ws/src/build/my_topic_rclcpp",
+		"source" : "/home/nvidia/Downloads/ros2_ws/src/my_topic_rclcpp "
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

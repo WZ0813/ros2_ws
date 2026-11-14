@@ -1,0 +1,6 @@
+rm_serial_driver:
+  ros__parameters:
+    timestamp_offset: 0.0022
+    check_frequency: 0.5
+    device_name: "/dev/ttyACM0"
+    baud_rate: 100000 0

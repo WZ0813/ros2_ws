@@ -1,0 +1,97 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-f76fdfce4bcbdeefb03d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "my_26robot_commander_cpp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "command_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-command_publisher-dd41a169fef853bce0fe.json",
+					"name" : "command_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "commander::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-commander-6ecb5e0adc1c86472f42.json",
+					"name" : "commander",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_26robot_commander_cpp_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_26robot_commander_cpp_uninstall-8a409104472597bfce36.json",
+					"name" : "my_26robot_commander_cpp_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_moveit::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_moveit-5b4ba1f02a34b6c7cd4e.json",
+					"name" : "test_moveit",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-3c912c2cdb5a4ba11f2e.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_commander_cpp",
+		"source" : "/home/nvidia/Downloads/ros2_ws/src/my_26robot_commander_cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

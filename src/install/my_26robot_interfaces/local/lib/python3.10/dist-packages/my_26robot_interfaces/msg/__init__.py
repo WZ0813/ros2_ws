@@ -1,3 +1,1 @@
-from my_26robot_interfaces.msg._j_joint_command import JJointCommand  # noqa: F401
-from my_26robot_interfaces.msg._joint_command import JointCommand  # noqa: F401
-from my_26robot_interfaces.msg._pose_command import PoseCommand  # noqa: F401
+/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_py/my_26robot_interfaces/msg/__init__.py

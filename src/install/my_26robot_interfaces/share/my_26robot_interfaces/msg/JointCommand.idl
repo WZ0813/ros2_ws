@@ -1,12 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from my_26robot_interfaces/msg/JointCommand.msg
-// generated code does not contain a copyright notice
-
-
-module my_26robot_interfaces {
-  module msg {
-    struct JointCommand {
-      sequence<double> joint_angles;
-    };
-  };
-};
+/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces/msg/JointCommand.idl

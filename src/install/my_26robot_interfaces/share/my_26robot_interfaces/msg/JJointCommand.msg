@@ -1,2 +1,1 @@
-std_msgs/Header header
-float64[6] joint_angles
+/home/wz/ros2_ws/src/my_26robot_interfaces/msg/JJointCommand.msg

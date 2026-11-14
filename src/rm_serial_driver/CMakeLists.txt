@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.8)
 project(rm_serial_driver)
 
-## Use C++17
-set(CMAKE_CXX_STANDARD 17)
+## Use C++14
+set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -43,5 +43,4 @@ endif()
 ament_auto_package(
   INSTALL_TO_SHARE
   launch
-  config
 )

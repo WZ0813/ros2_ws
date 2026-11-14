@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces
+CMAKE_SOURCE_DIR = /home/wz/ros2_ws/src/my_26robot_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces
+CMAKE_BINARY_DIR = /home/wz/ros2_ws/src/build/my_26robot_interfaces
 
 # Utility rule file for my_26robot_interfaces_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/my_26robot_interfaces_uninstall.dir/compiler_depend.make
 include CMakeFiles/my_26robot_interfaces_uninstall.dir/progress.make
 
 CMakeFiles/my_26robot_interfaces_uninstall:
-	/usr/bin/cmake -P /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/wz/ros2_ws/src/build/my_26robot_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 my_26robot_interfaces_uninstall: CMakeFiles/my_26robot_interfaces_uninstall
 my_26robot_interfaces_uninstall: CMakeFiles/my_26robot_interfaces_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/my_26robot_interfaces_uninstall.dir/clean:
 .PHONY : CMakeFiles/my_26robot_interfaces_uninstall.dir/clean
 
 CMakeFiles/my_26robot_interfaces_uninstall.dir/depend:
-	cd /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles/my_26robot_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wz/ros2_ws/src/build/my_26robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wz/ros2_ws/src/my_26robot_interfaces /home/wz/ros2_ws/src/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles/my_26robot_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_26robot_interfaces_uninstall.dir/depend
 

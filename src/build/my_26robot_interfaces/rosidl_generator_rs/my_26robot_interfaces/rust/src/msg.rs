@@ -32,7 +32,7 @@ impl rosidl_runtime_rs::Message for JointCommand {
   fn into_rmw_message(msg_cow: std::borrow::Cow<'_, Self>) -> std::borrow::Cow<'_, Self::RmwMsg> {
     match msg_cow {
       std::borrow::Cow::Owned(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
-        joint_angles: msg.joint_angles.into(),
+        joint_angles: msg.joint_angles.as_slice().into(),
       }),
       std::borrow::Cow::Borrowed(msg) => std::borrow::Cow::Owned(Self::RmwMsg {
         joint_angles: msg.joint_angles.as_slice().into(),
@@ -42,9 +42,7 @@ impl rosidl_runtime_rs::Message for JointCommand {
 
   fn from_rmw_message(msg: Self::RmwMsg) -> Self {
     Self {
-      joint_angles: msg.joint_angles
-          .into_iter()
-          .collect(),
+      joint_angles: msg.joint_angles.into(),
     }
   }
 }

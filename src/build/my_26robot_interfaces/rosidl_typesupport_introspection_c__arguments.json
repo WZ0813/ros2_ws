@@ -1,11 +1,11 @@
 {
   "package_name": "my_26robot_interfaces",
-  "output_dir": "/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_typesupport_introspection_c/my_26robot_interfaces",
+  "output_dir": "/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_typesupport_introspection_c/my_26robot_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource",
   "idl_tuples": [
-    "/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces:msg/JointCommand.idl",
-    "/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces:msg/JJointCommand.idl",
-    "/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces:msg/PoseCommand.idl"
+    "/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces:msg/JointCommand.idl",
+    "/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces:msg/JJointCommand.idl",
+    "/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces:msg/PoseCommand.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/humble/share/std_msgs/msg/Bool.idl",
@@ -50,9 +50,9 @@
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/msg__type_support.c.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__rosidl_typesupport_introspection_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em",
-    "/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces/msg/JointCommand.idl",
-    "/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces/msg/JJointCommand.idl",
-    "/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces/msg/PoseCommand.idl",
+    "/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces/msg/JointCommand.idl",
+    "/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces/msg/JJointCommand.idl",
+    "/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_adapter/my_26robot_interfaces/msg/PoseCommand.idl",
     "/opt/ros/humble/share/std_msgs/msg/Bool.idl",
     "/opt/ros/humble/share/std_msgs/msg/Byte.idl",
     "/opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl",

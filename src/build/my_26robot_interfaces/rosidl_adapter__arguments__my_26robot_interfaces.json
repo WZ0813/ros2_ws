@@ -1,8 +1,8 @@
 {
   "package_name": "my_26robot_interfaces",
   "non_idl_tuples": [
-    "/home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces:msg/JointCommand.msg",
-    "/home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces:msg/JJointCommand.msg",
-    "/home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces:msg/PoseCommand.msg"
+    "/home/wz/ros2_ws/src/my_26robot_interfaces:msg/JointCommand.msg",
+    "/home/wz/ros2_ws/src/my_26robot_interfaces:msg/JJointCommand.msg",
+    "/home/wz/ros2_ws/src/my_26robot_interfaces:msg/PoseCommand.msg"
   ]
 }

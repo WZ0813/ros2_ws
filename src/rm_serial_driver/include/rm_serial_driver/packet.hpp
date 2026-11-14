@@ -1,4 +1,4 @@
-    // Copyright (c) 2022 ChenJun
+// Copyright (c) 2022 ChenJun
 // Licensed under the Apache-2.0 License.
 
 #ifndef RM_SERIAL_DRIVER__PACKET_HPP_

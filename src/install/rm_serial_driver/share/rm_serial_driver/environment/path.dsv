@@ -1,1 +1,1 @@
-prepend-non-duplicate-if-exists;PATH;bin
+/home/wz/ros2_ws/src/build/rm_serial_driver/ament_cmake_environment_hooks/path.dsv

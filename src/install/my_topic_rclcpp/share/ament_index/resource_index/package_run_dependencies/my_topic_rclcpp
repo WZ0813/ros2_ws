@@ -1,1 +1,0 @@
-moveit_ros_planning_interface;rclcpp;std_msgs;example_interfaces;my_26robot_interfaces;trajectory_msgs;ament_lint_auto;ament_lint_common

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces
+CMAKE_SOURCE_DIR = /home/wz/ros2_ws/src/my_26robot_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces
+CMAKE_BINARY_DIR = /home/wz/ros2_ws/src/build/my_26robot_interfaces
 
 # Utility rule file for my_26robot_interfaces__cpp.
 
@@ -133,8 +133,8 @@ rosidl_generator_cpp/my_26robot_interfaces/msg/joint_command.hpp: /opt/ros/humbl
 rosidl_generator_cpp/my_26robot_interfaces/msg/joint_command.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_cpp/my_26robot_interfaces/msg/joint_command.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/my_26robot_interfaces/msg/joint_command.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wz/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/my_26robot_interfaces/msg/detail/joint_command__builder.hpp: rosidl_generator_cpp/my_26robot_interfaces/msg/joint_command.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_26robot_interfaces/msg/detail/joint_command__builder.hpp
@@ -206,6 +206,6 @@ CMakeFiles/my_26robot_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/my_26robot_interfaces__cpp.dir/clean
 
 CMakeFiles/my_26robot_interfaces__cpp.dir/depend:
-	cd /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles/my_26robot_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wz/ros2_ws/src/build/my_26robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wz/ros2_ws/src/my_26robot_interfaces /home/wz/ros2_ws/src/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles/my_26robot_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_26robot_interfaces__cpp.dir/depend
 

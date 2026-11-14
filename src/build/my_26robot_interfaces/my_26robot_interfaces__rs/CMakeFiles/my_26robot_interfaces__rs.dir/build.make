@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces
+CMAKE_SOURCE_DIR = /home/wz/ros2_ws/src/my_26robot_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces
+CMAKE_BINARY_DIR = /home/wz/ros2_ws/src/build/my_26robot_interfaces
 
 # Utility rule file for my_26robot_interfaces__rs.
 
@@ -69,13 +69,14 @@ include my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs.dir/progr
 my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs: rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs
 my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs: rosidl_generator_rs/my_26robot_interfaces/rust/build.rs
 my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs: rosidl_generator_rs/my_26robot_interfaces/rust/Cargo.toml
-my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs: rosidl_generator_rs/my_26robot_interfaces/rust/src/msg.rs
-my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs: rosidl_generator_rs/my_26robot_interfaces/rust/src/msg/rmw.rs
 
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/lib/rosidl_generator_rs/rosidl_generator_rs
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_rs/__init__.py
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/action.rs.em
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/action/rmw.rs.em
+rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/build.rs.em
+rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/Cargo.toml.em
+rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/lib.rs.em
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/msg.rs.em
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/msg/rmw.rs.em
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/srv.rs.em
@@ -84,9 +85,6 @@ rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/templates/msg_rmw.rs.em
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/templates/srv_idiomatic.rs.em
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/rosidl_generator_rs/resource/templates/srv_rmw.rs.em
-rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: rosidl_adapter/my_26robot_interfaces/msg/JointCommand.idl
-rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: rosidl_adapter/my_26robot_interfaces/msg/JJointCommand.idl
-rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: rosidl_adapter/my_26robot_interfaces/msg/PoseCommand.idl
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: rosidl_adapter/my_26robot_interfaces/msg/JointCommand.idl
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: rosidl_adapter/my_26robot_interfaces/msg/JJointCommand.idl
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: rosidl_adapter/my_26robot_interfaces/msg/PoseCommand.idl
@@ -122,8 +120,8 @@ rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Rust code for ROS interfaces"
-	cd /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/my_26robot_interfaces__rs && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_rs__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wz/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Rust code for ROS interfaces"
+	cd /home/wz/ros2_ws/src/build/my_26robot_interfaces/my_26robot_interfaces__rs && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_rs/cmake/../../../lib/rosidl_generator_rs/rosidl_generator_rs --generator-arguments-file /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_rs__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_rs/my_26robot_interfaces/rust/build.rs: rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/my_26robot_interfaces/rust/build.rs
@@ -131,18 +129,10 @@ rosidl_generator_rs/my_26robot_interfaces/rust/build.rs: rosidl_generator_rs/my_
 rosidl_generator_rs/my_26robot_interfaces/rust/Cargo.toml: rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/my_26robot_interfaces/rust/Cargo.toml
 
-rosidl_generator_rs/my_26robot_interfaces/rust/src/msg.rs: rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/my_26robot_interfaces/rust/src/msg.rs
-
-rosidl_generator_rs/my_26robot_interfaces/rust/src/msg/rmw.rs: rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs
-	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_rs/my_26robot_interfaces/rust/src/msg/rmw.rs
-
 my_26robot_interfaces__rs: my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs
 my_26robot_interfaces__rs: rosidl_generator_rs/my_26robot_interfaces/rust/Cargo.toml
 my_26robot_interfaces__rs: rosidl_generator_rs/my_26robot_interfaces/rust/build.rs
 my_26robot_interfaces__rs: rosidl_generator_rs/my_26robot_interfaces/rust/src/lib.rs
-my_26robot_interfaces__rs: rosidl_generator_rs/my_26robot_interfaces/rust/src/msg.rs
-my_26robot_interfaces__rs: rosidl_generator_rs/my_26robot_interfaces/rust/src/msg/rmw.rs
 my_26robot_interfaces__rs: my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs.dir/build.make
 .PHONY : my_26robot_interfaces__rs
 
@@ -151,10 +141,10 @@ my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs.dir/build: my_26r
 .PHONY : my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs.dir/build
 
 my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs.dir/clean:
-	cd /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/my_26robot_interfaces__rs && $(CMAKE_COMMAND) -P CMakeFiles/my_26robot_interfaces__rs.dir/cmake_clean.cmake
+	cd /home/wz/ros2_ws/src/build/my_26robot_interfaces/my_26robot_interfaces__rs && $(CMAKE_COMMAND) -P CMakeFiles/my_26robot_interfaces__rs.dir/cmake_clean.cmake
 .PHONY : my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs.dir/clean
 
 my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs.dir/depend:
-	cd /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/my_26robot_interfaces__rs /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/my_26robot_interfaces__rs /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wz/ros2_ws/src/build/my_26robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wz/ros2_ws/src/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces/my_26robot_interfaces__rs /home/wz/ros2_ws/src/build/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces/my_26robot_interfaces__rs /home/wz/ros2_ws/src/build/my_26robot_interfaces/my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : my_26robot_interfaces__rs/CMakeFiles/my_26robot_interfaces__rs.dir/depend
 

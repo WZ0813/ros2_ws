@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces
+CMAKE_SOURCE_DIR = /home/wz/ros2_ws/src/my_26robot_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces
+CMAKE_BINARY_DIR = /home/wz/ros2_ws/src/build/my_26robot_interfaces
 
 # Include any dependencies generated for this target.
 include CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/depend.make
@@ -117,8 +117,8 @@ rosidl_generator_c/my_26robot_interfaces/msg/joint_command.h: /opt/ros/humble/sh
 rosidl_generator_c/my_26robot_interfaces/msg/joint_command.h: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
 rosidl_generator_c/my_26robot_interfaces/msg/joint_command.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/my_26robot_interfaces/msg/joint_command.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/wz/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.h: rosidl_generator_c/my_26robot_interfaces/msg/joint_command.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.h
@@ -165,44 +165,44 @@ rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c: r
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.o: CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.o: rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.o: CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.o -MF CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.o.d -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.o -c /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wz/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.o -MF CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.o.d -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.o -c /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c
 
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c > CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c > CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.i
 
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/joint_command__functions.c.s
 
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.o: CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.o: rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.o: CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.o -MF CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.o.d -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.o -c /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wz/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.o -MF CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.o.d -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.o -c /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c
 
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c > CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c > CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.i
 
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/j_joint_command__functions.c.s
 
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.o: CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.o: rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.o: CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.o -MF CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.o.d -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.o -c /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/wz/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.o -MF CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.o.d -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.o -c /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c
 
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c > CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c > CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.i
 
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c -o CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_26robot_interfaces/msg/detail/pose_command__functions.c.s
 
 # Object files for target my_26robot_interfaces__rosidl_generator_c
 my_26robot_interfaces__rosidl_generator_c_OBJECTS = \
@@ -222,7 +222,7 @@ libmy_26robot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_
 libmy_26robot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libmy_26robot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libmy_26robot_interfaces__rosidl_generator_c.so: CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libmy_26robot_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/wz/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libmy_26robot_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -248,6 +248,6 @@ CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generato
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_26robot_interfaces/msg/j_joint_command.h
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_26robot_interfaces/msg/joint_command.h
 CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_26robot_interfaces/msg/pose_command.h
-	cd /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wz/ros2_ws/src/build/my_26robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wz/ros2_ws/src/my_26robot_interfaces /home/wz/ros2_ws/src/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_26robot_interfaces__rosidl_generator_c.dir/depend
 

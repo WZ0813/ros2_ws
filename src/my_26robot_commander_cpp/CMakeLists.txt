@@ -38,6 +38,13 @@ ament_target_dependencies(commander
   trajectory_msgs
 )
 
+# 3. 编译“读取当前关节状态 -> 规划到目标 -> 执行”的示例
+add_executable(trajectory_example src/trajectory_example.cpp)
+ament_target_dependencies(trajectory_example
+  rclcpp
+  moveit_ros_planning_interface
+)
+
 # Publish one command to the topics consumed by commander.
 add_executable(command_publisher src/command_publisher.cpp)
 ament_target_dependencies(command_publisher
@@ -50,6 +57,7 @@ ament_target_dependencies(command_publisher
 install(TARGETS
   test_moveit
   commander
+  trajectory_example
   command_publisher
   DESTINATION lib/${PROJECT_NAME}
 )

@@ -54,7 +54,7 @@ endif()
 add_library(my_26robot_interfaces::my_26robot_interfaces__rosidl_generator_py SHARED IMPORTED)
 
 set_target_properties(my_26robot_interfaces::my_26robot_interfaces__rosidl_generator_py PROPERTIES
-  INTERFACE_LINK_LIBRARIES "my_26robot_interfaces::my_26robot_interfaces__rosidl_generator_c;/usr/lib/aarch64-linux-gnu/libpython3.10.so;my_26robot_interfaces::my_26robot_interfaces__rosidl_typesupport_c;std_msgs::std_msgs__rosidl_generator_py;builtin_interfaces::builtin_interfaces__rosidl_generator_py"
+  INTERFACE_LINK_LIBRARIES "my_26robot_interfaces::my_26robot_interfaces__rosidl_generator_c;/usr/lib/x86_64-linux-gnu/libpython3.10.so;my_26robot_interfaces::my_26robot_interfaces__rosidl_typesupport_c;std_msgs::std_msgs__rosidl_generator_py;builtin_interfaces::builtin_interfaces__rosidl_generator_py"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

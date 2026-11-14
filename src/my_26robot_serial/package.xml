@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>my_26robot_serial</name>
+  <version>0.0.0</version>
+  <description>Serial communication with the 26robot microcontroller.</description>
+  <maintainer email="wz@todo.todo">wz</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- ★ 用 ament_cmake_auto 时 buildtool 必须写 ament_cmake_auto，不是 ament_cmake -->
+  <buildtool_depend>ament_cmake_auto</buildtool_depend>
+
+  <!-- ★ 组件注册：rclcpp_components_register_node 的来源 -->
+  <depend>rclcpp</depend>
+  <depend>rclcpp_components</depend>
+
+  <!-- ★ 串口驱动：serial_driver + io_context -->
+  <depend>serial_driver</depend>
+  <depend>io_context</depend>
+
+  <!-- ★ 源码里用到的消息包 -->
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>tf2</depend>
+  <depend>tf2_geometry_msgs</depend>
+  <depend>trajectory_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_cmake_clang_format</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

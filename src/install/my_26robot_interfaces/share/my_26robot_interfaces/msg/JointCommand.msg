@@ -1,1 +1,1 @@
-float64[] joint_angles
+/home/wz/ros2_ws/src/my_26robot_interfaces/msg/JointCommand.msg

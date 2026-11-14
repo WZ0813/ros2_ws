@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nvidia/Downloads/ros2_ws/src/rm_serial_driver
+CMAKE_SOURCE_DIR = /home/wz/ros2_ws/src/rm_serial_driver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nvidia/Downloads/ros2_ws/src/build/rm_serial_driver
+CMAKE_BINARY_DIR = /home/wz/ros2_ws/src/build/rm_serial_driver
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/nvidia/Downloads/ros2_ws/src/build/rm_serial_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/Downloads/ros2_ws/src/rm_serial_driver /home/nvidia/Downloads/ros2_ws/src/rm_serial_driver /home/nvidia/Downloads/ros2_ws/src/build/rm_serial_driver /home/nvidia/Downloads/ros2_ws/src/build/rm_serial_driver /home/nvidia/Downloads/ros2_ws/src/build/rm_serial_driver/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wz/ros2_ws/src/build/rm_serial_driver && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wz/ros2_ws/src/rm_serial_driver /home/wz/ros2_ws/src/rm_serial_driver /home/wz/ros2_ws/src/build/rm_serial_driver /home/wz/ros2_ws/src/build/rm_serial_driver /home/wz/ros2_ws/src/build/rm_serial_driver/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

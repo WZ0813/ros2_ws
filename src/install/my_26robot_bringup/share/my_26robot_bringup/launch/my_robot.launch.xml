@@ -1,3 +1,0 @@
-<launch>
-    <include file="$(find-pkg-share my_26robot_bringup)/launch/my_robot.launch.py"/>
-</launch>

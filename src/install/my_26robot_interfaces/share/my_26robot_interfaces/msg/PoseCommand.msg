@@ -1,7 +1,1 @@
-float64 x
-float64 y
-float64 z
-float64 roll
-float64 pitch
-float64 yaw
-bool cartesian_path
+/home/wz/ros2_ws/src/my_26robot_interfaces/msg/PoseCommand.msg

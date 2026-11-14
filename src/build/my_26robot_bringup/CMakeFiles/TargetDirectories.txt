@@ -1,9 +1,0 @@
-/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_bringup/CMakeFiles/uninstall.dir
-/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_bringup/CMakeFiles/my_26robot_bringup_uninstall.dir
-/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_bringup/CMakeFiles/test.dir
-/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_bringup/CMakeFiles/edit_cache.dir
-/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_bringup/CMakeFiles/rebuild_cache.dir
-/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_bringup/CMakeFiles/list_install_components.dir
-/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_bringup/CMakeFiles/install.dir
-/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_bringup/CMakeFiles/install/local.dir
-/home/nvidia/Downloads/ros2_ws/src/build/my_26robot_bringup/CMakeFiles/install/strip.dir

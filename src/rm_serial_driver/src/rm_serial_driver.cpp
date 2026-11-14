@@ -8,7 +8,6 @@
 #include <rclcpp/logging.hpp>
 #include <rclcpp/qos.hpp>
 #include <rclcpp/utilities.hpp>
-#include <rclcpp_components/register_node_macro.hpp>
 // 串口驱动库（io_context / serial_driver / serial_port）
 #include <serial_driver/serial_driver.hpp>
 // tf2 与 geometry_msgs 的转换工具（tf2::toMsg 等）
@@ -67,7 +66,6 @@ RMSerialDriver::RMSerialDriver(const rclcpp::NodeOptions & options)
       receive_thread_ = std::thread(&RMSerialDriver::ArmReceiveData, this);
       RCLCPP_INFO(get_logger(), "Start receive pack!");
     }
-
   } catch (const std::exception & ex) {
     RCLCPP_ERROR(
       get_logger(), "Error creating serial port: %s - %s", device_name_.c_str(), ex.what());
@@ -427,6 +425,5 @@ void RMSerialDriver::verifySerialPortTransmission()
   }
 
 }
-}  // namespace rm_serial_driver
 
-RCLCPP_COMPONENTS_REGISTER_NODE(rm_serial_driver::RMSerialDriver)
+}

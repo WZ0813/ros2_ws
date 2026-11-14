@@ -1,4 +1,1 @@
-# generated from rosidl_cmake/cmake/rosidl_cmake-extras.cmake.in
-
-set(my_26robot_interfaces_IDL_FILES "msg/JointCommand.idl;msg/JJointCommand.idl;msg/PoseCommand.idl")
-set(my_26robot_interfaces_INTERFACE_FILES "msg/JointCommand.msg;msg/JJointCommand.msg;msg/PoseCommand.msg")
+/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_cmake/rosidl_cmake-extras.cmake

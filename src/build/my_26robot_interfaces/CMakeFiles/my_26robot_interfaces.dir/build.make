@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces
+CMAKE_SOURCE_DIR = /home/wz/ros2_ws/src/my_26robot_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces
+CMAKE_BINARY_DIR = /home/wz/ros2_ws/src/build/my_26robot_interfaces
 
 # Utility rule file for my_26robot_interfaces.
 
@@ -66,9 +66,9 @@ include CMakeFiles/my_26robot_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/my_26robot_interfaces.dir/progress.make
 
-CMakeFiles/my_26robot_interfaces: /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces/msg/JointCommand.msg
-CMakeFiles/my_26robot_interfaces: /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces/msg/JJointCommand.msg
-CMakeFiles/my_26robot_interfaces: /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces/msg/PoseCommand.msg
+CMakeFiles/my_26robot_interfaces: /home/wz/ros2_ws/src/my_26robot_interfaces/msg/JointCommand.msg
+CMakeFiles/my_26robot_interfaces: /home/wz/ros2_ws/src/my_26robot_interfaces/msg/JJointCommand.msg
+CMakeFiles/my_26robot_interfaces: /home/wz/ros2_ws/src/my_26robot_interfaces/msg/PoseCommand.msg
 CMakeFiles/my_26robot_interfaces: /opt/ros/humble/share/std_msgs/msg/Bool.idl
 CMakeFiles/my_26robot_interfaces: /opt/ros/humble/share/std_msgs/msg/Byte.idl
 CMakeFiles/my_26robot_interfaces: /opt/ros/humble/share/std_msgs/msg/ByteMultiArray.idl
@@ -113,6 +113,6 @@ CMakeFiles/my_26robot_interfaces.dir/clean:
 .PHONY : CMakeFiles/my_26robot_interfaces.dir/clean
 
 CMakeFiles/my_26robot_interfaces.dir/depend:
-	cd /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces /home/nvidia/Downloads/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles/my_26robot_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wz/ros2_ws/src/build/my_26robot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wz/ros2_ws/src/my_26robot_interfaces /home/wz/ros2_ws/src/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces /home/wz/ros2_ws/src/build/my_26robot_interfaces/CMakeFiles/my_26robot_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_26robot_interfaces.dir/depend
 

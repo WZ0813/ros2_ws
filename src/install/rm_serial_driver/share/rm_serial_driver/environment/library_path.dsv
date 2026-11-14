@@ -1,1 +1,1 @@
-prepend-non-duplicate;LD_LIBRARY_PATH;lib
+/home/wz/ros2_ws/src/build/rm_serial_driver/ament_cmake_environment_hooks/library_path.dsv

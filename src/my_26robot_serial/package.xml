@@ -21,6 +21,7 @@
   <!-- ★ 源码里用到的消息包 -->
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>
+  <depend>my_26robot_interfaces</depend>
   <depend>tf2</depend>
   <depend>tf2_geometry_msgs</depend>
   <depend>trajectory_msgs</depend>

@@ -26,11 +26,15 @@
 #include <filesystem>
 #include <chrono>
 #include <ctime>
+#include <unistd.h>  // access() 用于检查串口设备读写权限
 
 // 项目内部头：CRC16 校验、串口包结构体、本节点类声明、日志封装
 #include "rm_serial_driver/crc.hpp"
 #include "rm_serial_driver/packet.hpp"
 #include "rm_serial_driver/rm_serial_driver.hpp"
+
+// 组件注册宏：缺少它时生成的可执行文件会静默空转，节点永远不会被创建
+#include "rclcpp_components/register_node_macro.hpp"
 
 #include <my_26robot_interfaces/msg/j_joint_command.hpp>
 #include <my_26robot_interfaces/msg/pose_command.hpp>
@@ -59,14 +63,30 @@ RMSerialDriver::RMSerialDriver(const rclcpp::NodeOptions & options)
     );
     // 初始化串口并启动接收线程
   try {
+    // ==================== cout 调试：定位串口打开失败的原因 ====================
+    std::cout << "[serial DEBUG] 使用设备: " << device_name_ << std::endl;
+    std::cout << "[serial DEBUG] 设备文件存在: "
+              << (std::filesystem::exists(device_name_) ? "YES" : "NO (设备未连接/未上电/名称错误)")
+              << std::endl;
+    if (std::filesystem::exists(device_name_)) {
+      int acc = access(device_name_.c_str(), R_OK | W_OK);
+      if (acc == 0) {
+        std::cout << "[serial DEBUG] 读写权限: OK" << std::endl;
+      } else {
+        std::cout << "[serial DEBUG] 读写权限: DENIED (当前用户不在 dialout 组? "
+                     "试试 sudo usermod -aG dialout $USER 后重新登录)" << std::endl;
+      }
+    }
+    // ==========================================================================
     serial_driver_->init_port(device_name_, *device_config_);
-    if (!serial_driver_->port()->is_open()) 
+    if (!serial_driver_->port()->is_open())
     {
       serial_driver_->port()->open();
       receive_thread_ = std::thread(&RMSerialDriver::ArmReceiveData, this);
       RCLCPP_INFO(get_logger(), "Start receive pack!");
     }
   } catch (const std::exception & ex) {
+    std::cout << "[serial DEBUG] 串口打开失败! 异常信息: " << ex.what() << std::endl;
     RCLCPP_ERROR(
       get_logger(), "Error creating serial port: %s - %s", device_name_.c_str(), ex.what());
     throw ex;
@@ -427,3 +447,6 @@ void RMSerialDriver::verifySerialPortTransmission()
 }
 
 }
+
+// 注册组件类，使 rm_serial_driver_node 可执行文件和 component container 能实例化本节点
+RCLCPP_COMPONENTS_REGISTER_NODE(rm_serial_driver::RMSerialDriver)

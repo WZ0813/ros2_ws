@@ -17,6 +17,7 @@ ament_auto_find_build_dependencies()
 
 # 显式引入，保证 rclcpp_components_register_node 可用
 find_package(rclcpp_components REQUIRED)
+find_package(my_26robot_interfaces REQUIRED)
 
 ###########
 ## Build ##

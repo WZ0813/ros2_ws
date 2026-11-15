@@ -1,1 +1,0 @@
-/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_c/my_26robot_interfaces/msg/pose_command.h

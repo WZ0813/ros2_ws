@@ -1,1 +1,0 @@
-/home/wz/ros2_ws/src/my_26robot_interfaces/msg/JJointCommand.msg

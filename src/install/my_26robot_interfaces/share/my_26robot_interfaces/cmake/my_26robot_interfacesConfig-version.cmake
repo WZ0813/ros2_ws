@@ -1,1 +1,0 @@
-/home/wz/ros2_ws/src/build/my_26robot_interfaces/ament_cmake_core/my_26robot_interfacesConfig-version.cmake

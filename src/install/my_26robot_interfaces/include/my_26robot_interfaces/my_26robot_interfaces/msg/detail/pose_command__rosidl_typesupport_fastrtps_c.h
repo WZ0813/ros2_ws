@@ -1,1 +1,0 @@
-/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_typesupport_fastrtps_c/my_26robot_interfaces/msg/detail/pose_command__rosidl_typesupport_fastrtps_c.h

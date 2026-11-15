@@ -1,1 +1,0 @@
-/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_rs/my_26robot_interfaces/rust/src/msg/rmw.rs

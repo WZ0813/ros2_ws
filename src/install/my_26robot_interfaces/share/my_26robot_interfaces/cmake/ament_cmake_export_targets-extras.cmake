@@ -1,1 +1,0 @@
-/home/wz/ros2_ws/src/build/my_26robot_interfaces/ament_cmake_export_targets/ament_cmake_export_targets-extras.cmake

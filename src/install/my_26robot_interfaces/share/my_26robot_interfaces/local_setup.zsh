@@ -1,1 +1,0 @@
-/home/wz/ros2_ws/src/build/my_26robot_interfaces/ament_cmake_environment_hooks/local_setup.zsh

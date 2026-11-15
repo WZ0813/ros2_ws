@@ -1,1 +1,0 @@
-/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_cpp/my_26robot_interfaces/msg/detail/j_joint_command__struct.hpp

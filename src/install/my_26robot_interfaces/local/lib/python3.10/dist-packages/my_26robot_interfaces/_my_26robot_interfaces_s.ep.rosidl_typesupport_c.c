@@ -1,1 +1,0 @@
-/home/wz/ros2_ws/src/build/my_26robot_interfaces/rosidl_generator_py/my_26robot_interfaces/_my_26robot_interfaces_s.ep.rosidl_typesupport_c.c

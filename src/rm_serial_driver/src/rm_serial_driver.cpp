@@ -41,7 +41,7 @@
 
 namespace rm_serial_driver
 {
-// ================================================================ 构造函数 =====================================================
+// =========================================================== 构造函数 =====================================================
 RMSerialDriver::RMSerialDriver(const rclcpp::NodeOptions & options)
 : Node("rm_serial_driver", options),
   owned_ctx_{new IoContext(2)},
@@ -52,12 +52,14 @@ RMSerialDriver::RMSerialDriver(const rclcpp::NodeOptions & options)
   // 读取串口参数（设备名、波特率、流控、校验、停止位）
   getParams();
 
-   timestamp_offset_ = this->declare_parameter("timestamp_offset", 0.0);
+  timestamp_offset_ = this->declare_parameter("timestamp_offset", 0.0);
 
    // 创建发布者：
   //   /latency      —— 发布端到端延迟（毫秒）
   //   /recieve_pack —— 发布从下位机解析出的状态数据
   latency_pub_ = this->create_publisher<std_msgs::msg::Float64>("/latency", 10);
+  send_ack_pub_ = this->create_publisher<std_msgs::msg::Header>(
+    "/send_pack_ack", rclcpp::SensorDataQoS());
   joint_pub_ = this->create_publisher<my_26robot_interfaces::msg::JJointCommand>(
         "/recieve_pack", rclcpp::SensorDataQoS()
     );
@@ -227,6 +229,8 @@ void RMSerialDriver::ArmReceiveData()
         pub_pack.joint_angles[3] = packet.joint4;
         pub_pack.joint_angles[4] = packet.joint5;
         pub_pack.joint_angles[5] = packet.joint6;
+        pub_pack.mode = packet.mode;
+        
         joint_pub_->publish(pub_pack);
 
         // RCLCPP_INFO(get_logger(), "publish recieve_pack!");
@@ -278,6 +282,7 @@ void RMSerialDriver::ArmSendData(const my_26robot_interfaces::msg::JJointCommand
         std::vector<uint8_t> data = toVector(packet);   // 结构体 → 字节流
 
         serial_driver_->port()->send(data);
+        send_ack_pub_->publish(msg->header);
     }else if(receive_status == kReceiveTimeoutCode){
         // 超时：发全 0，但状态码写"超时"
         packet.joint1 = 0;

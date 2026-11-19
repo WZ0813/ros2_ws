@@ -16,15 +16,9 @@ find_package(tf2_geometry_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(moveit_msgs REQUIRED)
 find_package(trajectory_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
 
-# 1. 编译 test_moveit
-add_executable(test_moveit src/test_moveit.cpp)
-ament_target_dependencies(test_moveit 
-  rclcpp 
-  moveit_ros_planning_interface
-)
-
-# 2. 编译 commander
+# 编译 commander
 add_executable(commander src/commander_template.cpp)
 ament_target_dependencies(commander
   rclcpp 
@@ -38,27 +32,34 @@ ament_target_dependencies(commander
   trajectory_msgs
 )
 
-# 3. 编译“读取当前关节状态 -> 规划到目标 -> 执行”的示例
-add_executable(trajectory_example src/trajectory_example.cpp)
-ament_target_dependencies(trajectory_example
+# 4. 编译 point2point
+add_executable(point2point src/point2point.cpp)
+ament_target_dependencies(point2point
   rclcpp
   moveit_ros_planning_interface
+  moveit_msgs
+  my_26robot_interfaces
+  std_msgs
 )
 
-# Publish one command to the topics consumed by commander.
-add_executable(command_publisher src/command_publisher.cpp)
-ament_target_dependencies(command_publisher
+# 编译只发送规划轨迹最后一个点的节点。
+add_executable(point2point_final src/point2point_final.cpp)
+ament_target_dependencies(point2point_final
   rclcpp
-  example_interfaces
+  moveit_ros_planning_interface
+  moveit_msgs
   my_26robot_interfaces
+  std_msgs
+  geometry_msgs
 )
+
+
 
 # 💡 关键修复：必须把 commander 也加进 install 里面！
 install(TARGETS
-  test_moveit
   commander
-  trajectory_example
-  command_publisher
+  point2point
+  point2point_final
   DESTINATION lib/${PROJECT_NAME}
 )
 

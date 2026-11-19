@@ -1,5 +1,4 @@
-// Copyright (c) 2022 ChenJun
-// Licensed under the Apache-2.0 License.
+// Copyright (c) 2022 ChenJun// Licensed under the Apache-2.0 License.
 
 #ifndef RM_SERIAL_DRIVER__PACKET_HPP_
 #define RM_SERIAL_DRIVER__PACKET_HPP_
@@ -16,11 +15,10 @@ struct ArmReceivePacket
   float joint1;
   float joint2;
   float joint3;
-  float joint4;
+  float joint4;                
   float joint5;
-  float joint6;
-  uint8_t mode;//AUTO_AIM: 0, BUFF: 1
-  uint16_t checksum = 0;
+  float joint6;  
+  uint8_t mode;
 } __attribute__((packed));//packed可以，好东西
 
 struct ArmSendPacket

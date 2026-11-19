@@ -129,6 +129,12 @@ def generate_launch_description():
                 output="screen",
             ),
             Node(
+                package="my_26robot_commander_cpp",
+                executable="point2point",
+                parameters=[moveit_config.to_dict()],
+                output="screen",
+            ),
+            Node(
                 package="rviz2",
                 executable="rviz2",
                 arguments=[

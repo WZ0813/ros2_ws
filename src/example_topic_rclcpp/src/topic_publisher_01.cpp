@@ -1,18 +1,18 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
 
-class TopicPublisher01 : public rclcpp::Node
+class Pubjoint : public rclcpp::Node
 {
 public:
     // 构造函数,有一个参数为节点名称
-    TopicPublisher01(std::string name) : Node(name)
+    Pubjoint(std::string name) : Node(name)
     {
         RCLCPP_INFO(this->get_logger(), "大家好，我是%s.", name.c_str());
         // 创建发布者
         command_publisher_ = this->create_publisher<std_msgs::msg::String>("command", 10);
         // 创建定时器，500ms为周期，定时发布
         timer_ = this->create_wall_timer(std::chrono::milliseconds(500), 
-                                            std::bind(&TopicPublisher01::timer_callback, this));
+                                            std::bind(&Pubjoint::timer_callback, this));
     
     }
 
@@ -37,7 +37,7 @@ int main(int argc, char **argv)
 {
     rclcpp::init(argc, argv);
     /*创建对应节点的共享指针对象*/
-    auto node = std::make_shared<TopicPublisher01>("topic_publisher_01");
+    auto node = std::make_shared<Pubjoint>("pubjoint");
     /* 运行节点，并检测退出信号*/
     rclcpp::spin(node);
     rclcpp::shutdown();

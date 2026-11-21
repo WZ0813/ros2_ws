@@ -207,22 +207,18 @@ void RMSerialDriver::ArmReceiveData()
       data.insert(data.begin(), header[0]);
       markReceiveActive();
       
-      // printSerialPortContent(data);//取消注释，以打印串口数据
+      printSerialPortContent(data);//取消注释，以打印串口数据
       if (header[0] == 0xBE) {
         // printSerialPortContent(data);//取消注释，以打印串口数据
 
         // 字节流 → 结构体（即前面分析的 fromVector）
         ArmReceivePacket packet = fromVector<ArmReceivePacket>(data);
-        // RCLCPP_WARN(get_logger(),"packet size %ld",sizeof(packet)); // 取消注释，以查看发送包长度
-        bool crc_ok =
-          crc16::Verify_CRC16_Check_Sum(reinterpret_cast<const uint8_t *>(&packet), sizeof(packet));
-        if (crc_ok) {
-        // 用系统时间 + 偏移量作为时间戳（上下位机时钟对齐）
+        RCLCPP_DEBUG(get_logger(), "packet size %zu", sizeof(packet));
+
         timestamp_offset_ = this->get_parameter("timestamp_offset").as_double();
-        rclcpp::Time now_time = rclcpp::Clock().now() + rclcpp::Duration::from_seconds(timestamp_offset_);
         my_26robot_interfaces::msg::JJointCommand pub_pack;
         pub_pack.header.stamp = this->now() + rclcpp::Duration::from_seconds(timestamp_offset_);
-        pub_pack.header.frame_id = "base_link";   
+        pub_pack.header.frame_id = "base_link";
         pub_pack.joint_angles[0] = packet.joint1;
         pub_pack.joint_angles[1] = packet.joint2;
         pub_pack.joint_angles[2] = packet.joint3;
@@ -230,14 +226,17 @@ void RMSerialDriver::ArmReceiveData()
         pub_pack.joint_angles[4] = packet.joint5;
         pub_pack.joint_angles[5] = packet.joint6;
         pub_pack.mode = packet.mode;
-        
+
+        RCLCPP_INFO(
+          get_logger(),
+          "pub_pack: mode=%u angles=[%.6f, %.6f, %.6f, %.6f, %.6f, %.6f]",
+          static_cast<unsigned int>(pub_pack.mode),
+          pub_pack.joint_angles[0], pub_pack.joint_angles[1], pub_pack.joint_angles[2],
+          pub_pack.joint_angles[3], pub_pack.joint_angles[4], pub_pack.joint_angles[5]);
+
         joint_pub_->publish(pub_pack);
 
-        // RCLCPP_INFO(get_logger(), "publish recieve_pack!");
-        invaild_count = 0;   // 成功解析一次就清空错误计数
-        } else {
-          RCLCPP_ERROR(get_logger(), "CRC error!");
-        }
+        invaild_count = 0;
         
       } else {
         // 帧头不是 0xBE：节流告警 + 累计错误
@@ -430,8 +429,8 @@ void RMSerialDriver::printSerialPortContent(const std::vector<uint8_t> & data)
   for(long unsigned int i=0;i<data.size();i++){
     std::cout<< std::hex<<std::setw(2)<<std::setfill('0') 
             <<(unsigned int) (unsigned char)(data[i]) <<"  ";
-    // std::cout<< std::hex<<std::setw(2)<<std::setfill('0') << static_cast<int>(data[i]) <<"  ";
-    // printf("hex: %#x\n",data[i]); //输出带有前缀 0x 的十六进制数
+    std::cout<< std::hex<<std::setw(2)<<std::setfill('0') << static_cast<int>(data[i]) <<"  ";
+    printf("hex: %#x\n",data[i]); //输出带有前缀 0x 的十六进制数
   }
   std::cout<<std::endl;
 }
